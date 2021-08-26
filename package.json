@@ -17,6 +17,9 @@
     "url": "https://mupinnn.github.io"
   },
   "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
