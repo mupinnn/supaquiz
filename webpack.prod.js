@@ -12,7 +12,7 @@ module.exports = merge(common, {
       // CSS loaders
       {
         test: /\.s[ac]ss$/i,
-        include: path.resolve(__dirname, "src/styles"),
+        include: path.resolve(__dirname, "src/assets/scss"),
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
