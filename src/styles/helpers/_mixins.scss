@@ -1,0 +1,12 @@
+/**
+  * Breakpoint Up mixin
+  *
+  * Using min-width to getting mobile first approach
+  */
+@mixin breakpoint-up($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  }
+}
