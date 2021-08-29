@@ -103,6 +103,35 @@
       .quiz-config {
         margin-bottom: 1rem;
       }
+
+      #postplay {
+        h2 {
+          font-size: 2.25rem;
+          text-align: center;
+        }
+
+        .results {
+          .result-item {
+            padding: 1.5rem 0.5rem;
+            border-bottom: 2px solid $color-black-secondary;
+
+            &:last-child {
+              border: none;
+            }
+
+            dt {
+              font-size: 1.25rem;
+              font-weight: 600;
+            }
+
+            dd {
+              margin-top: 0.5rem;
+              margin-left: 0;
+              font-size: 1.15rem;
+            }
+          }
+        }
+      }
     }
   }
 }
