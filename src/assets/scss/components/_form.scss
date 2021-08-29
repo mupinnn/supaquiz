@@ -1,0 +1,22 @@
+label {
+  color: $color-black-secondary;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  border: 1px solid $color-black-secondary;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
