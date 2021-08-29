@@ -1,0 +1,24 @@
+.btn {
+  width: 100%;
+  display: block;
+  padding: 0.8rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background: #d1d5db;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: #9ca3af;
+  }
+
+  &-green {
+    background: $color-light-green-primary;
+
+    &:hover {
+      background-color: #5bb17d;
+    }
+  }
+}
