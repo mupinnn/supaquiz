@@ -39,6 +39,44 @@
               <button class="btn btn-green">Next</button>
             </div>
           </div>
+
+          <div class="card" id="preplay">
+            <p>Welcome to SupaQuiz!</p>
+            <p>All of the quiz is multiple choices.</p>
+            <div class="rules">
+              <p>Rules</p>
+              <ul>
+                <li>10 questions = 3 minute timer</li>
+                <li>30 questions = 7 minute timer</li>
+                <li>50 questions = 12 minute timer</li>
+              </ul>
+            </div>
+            <div class="quiz-config">
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                  <option value="18">Science: Computer</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="total_question">Number of Questions</label>
+                <select name="total_question" id="total_question">
+                  <option value="10">10</option>
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="difficulty">Difficulty</label>
+                <select name="difficulty" id="difficulty">
+                  <option value="easy">Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-green">Play!</button>
+          </div>
         </div>
       </section>
     </main>
