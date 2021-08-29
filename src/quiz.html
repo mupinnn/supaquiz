@@ -6,7 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
-    <h1>Quiz page</h1>
+  <body class="quiz-body">
+    <main>
+      <header>
+        <h1>SupaQuiz</h1>
+      </header>
+
+      <section class="game">
+        <div class="game-helper">
+          <div class="card" id="timer">
+            <span>00</span>:<span>16</span>:<span>00</span>
+          </div>
+          <div class="card" id="noq">
+            <div class="noq-item">1</div>
+          </div>
+        </div>
+        <div class="game-main">
+          <div class="card" id="play">
+            <div class="question">
+              <p>No. 1</p>
+              <p>The quick brown fox jumps over the lazy dog</p>
+            </div>
+            <div class="choices">
+              <button class="btn btn-choices">A. Ahay</button>
+              <button class="btn btn-choices">B. Ahay</button>
+              <button class="btn btn-choices">C. Ahay</button>
+              <button class="btn btn-choices">D. Ahay</button>
+              <button class="btn btn-choices">E. Ahay</button>
+            </div>
+            <div class="question-nav">
+              <button class="btn">Prev</button>
+              <button class="btn btn-green">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
