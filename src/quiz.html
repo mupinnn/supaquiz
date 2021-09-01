@@ -15,11 +15,9 @@
       <section class="game">
         <div class="game-helper">
           <div class="card" id="timer">
-            <span>00</span>:<span>16</span>:<span>00</span>
+            <span>00</span>:<span>00</span>:<span>00</span>
           </div>
-          <div class="card" id="noq">
-            <div class="noq-item">1</div>
-          </div>
+          <div class="card" id="noq"></div>
         </div>
         <div class="game-main">
           <div class="card" id="play">
@@ -27,16 +25,10 @@
               <p>No. 1</p>
               <p>The quick brown fox jumps over the lazy dog</p>
             </div>
-            <div class="choices">
-              <button class="btn btn-choices">A. Ahay</button>
-              <button class="btn btn-choices">B. Ahay</button>
-              <button class="btn btn-choices">C. Ahay</button>
-              <button class="btn btn-choices">D. Ahay</button>
-              <button class="btn btn-choices">E. Ahay</button>
-            </div>
+            <div class="choices"></div>
             <div class="question-nav">
-              <button class="btn">Prev</button>
-              <button class="btn btn-green">Next</button>
+              <button class="btn" id="prev-q">Prev</button>
+              <button class="btn btn-green" id="next-q">Next</button>
             </div>
           </div>
 
@@ -83,14 +75,14 @@
             <dl class="results">
               <div class="result-item">
                 <dt>Score</dt>
-                <dd>100!</dd>
+                <dd id="dd-score">100!</dd>
               </div>
               <div class="result-item">
                 <dt>Grade</dt>
-                <dd>A</dd>
+                <dd id="dd-grade">A</dd>
               </div>
             </dl>
-            <button class="btn btn-green">Play Again</button>
+            <button class="btn btn-green" id="btn-replay">Play Again</button>
           </div>
         </div>
       </section>
