@@ -1,8 +1,8 @@
 import "./choice-item";
 
 class ChoiceList extends HTMLElement {
-  set choiceList(choices) {
-    this.choices = choices;
+  set answers(answers) {
+    this.answerDetails = answers;
     this.render();
   }
 
@@ -12,9 +12,13 @@ class ChoiceList extends HTMLElement {
 
     const alpha = ["A", "B", "C", "D"];
 
-    if (this.choices) {
-      this.choices.forEach((choice, i) => {
+    if (this.answerDetails) {
+      const { choices, playerAnswer } = this.answerDetails;
+      choices.forEach((choice, i) => {
         const choiceItemEl = document.createElement("choice-item");
+        const chosen = playerAnswer === choice ? "chosen" : null;
+
+        choiceItemEl.classList.add(chosen);
         choiceItemEl.choiceItem = {
           choice,
           alpha: alpha[i],

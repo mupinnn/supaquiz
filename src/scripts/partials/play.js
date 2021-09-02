@@ -99,7 +99,10 @@ const renderPlayBoard = () => {
   questionNumber.innerText = `No. ${state.currentQuestionNumber}`;
   question.innerText = htmlDecode(currentQuestion.question);
 
-  choices.choiceList = currentQuestion.choices;
+  choices.answers = {
+    choices: currentQuestion.choices,
+    playerAnswer: currentQuestion.answer,
+  };
 };
 
 // eslint-disable-next-line import/prefer-default-export
