@@ -7,6 +7,10 @@ const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
   mode: "production",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].[fullhash].[id].js",
+  },
   module: {
     rules: [
       // CSS loaders

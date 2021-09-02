@@ -19,11 +19,14 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "regenerator-runtime": "^0.13.9",
+    "sweetalert2": "^11.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
+    "@vue/preload-webpack-plugin": "^2.0.0",
     "autoprefixer": "^10.3.2",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
