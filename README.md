@@ -1,5 +1,7 @@
 # SupaQuiz
 
+[PLAY IT NOW!!!](https://supaquiz.netlify.app/)
+
 At first, this project was created to fulfill my responsibility
 to complete assignments at [Dicoding Academy](https://www.dicoding.com/academies/163). As time goes by, I decided to put this project on my GitHub.
 
