@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
-    "build": "rm -rf dist && webpack --node-env=production --config webpack.prod.js",
+    "build": "webpack --node-env=production --config webpack.prod.js",
     "prettier:fix": "prettier -w -c './src/**/*.{html,css,js}'",
     "lint:fix": "eslint src --fix",
     "format": "npm run prettier:fix && npm run lint:fix"

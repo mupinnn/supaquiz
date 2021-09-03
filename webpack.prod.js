@@ -10,6 +10,7 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[fullhash].[id].js",
+    clean: true,
   },
   module: {
     rules: [
